@@ -1,0 +1,15 @@
+[package]
+name = "dutch-auction"
+version = "0.1.0"
+edition = "2021"
+description = "Soroban example demonstrating a time-decaying Dutch auction with linear price interpolation."
+keywords = ["soroban", "example", "dutch-auction"]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+soroban-sdk = "27.0.3"
+
+[dev-dependencies]
+soroban-sdk = { version = "27.0.3", features = ["testutils"] }
